@@ -1,0 +1,12 @@
+set shell := ["bash", "-c"]
+
+default: run
+
+build:
+	gcc -o sort main.c
+
+run: build
+	./sort
+
+clean:
+	rm -f sort
